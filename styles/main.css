@@ -10,12 +10,23 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
   height: 90px;
   width: 100%;
   background-color: #000000;
   color: #ffffff;
   border-bottom: 5px solid #242ee7;
+}
+
+/* Menu com ajuste responsivo */
+@media (max-width: 768px) {
+  .menu {
+    height: auto; /* Ajusta a altura */
+    padding: 10px 20px; /* Adiciona espaço entre os itens */
+  }
+
+  .menu-lives img {
+    width: 50px; /* Ajusta o tamanho da imagem no menu */
+  }
 }
 
 .panel {
@@ -25,6 +36,13 @@
   justify-content: center;
 }
 
+/* Ajuste para painéis responsivos */
+@media (max-width: 768px) {
+  .panel {
+    height: 72vh;
+  }
+}
+
 .square {
   height: 150px;
   width: 150px;
@@ -32,11 +50,20 @@
   background-color: #d1d1d1;
 }
 
+/* Ajuste das quadradas para telas pequenas */
+@media (max-width: 768px) {
+  .square {
+    height: 120px; /* Reduz o tamanho da quadrada */
+    width: 120px;
+  }
+}
+
 .enemy {
   background-image: url("../images/Eggman.webp");
   background-size: cover;
 }
 
+/* Ajuste de elementos relacionados a lives */
 .menu-lives {
   display: flex;
   align-items: center;
@@ -44,17 +71,33 @@
   margin-right: 10px;
 }
 
-.menu-lives img{
+.menu-lives img {
   width: 60px;
   margin-right: 10px;
 }
 
+/* Ajuste de lives em telas menores */
+@media (max-width: 768px) {
+  .menu-lives img {
+    width: 41px; /* Reduz o tamanho das imagens de lives */
+    height: 41px;
+  }
+}
 
 .second {
   margin-top: 10px;
 }
 
+/* Ajuste no espaçamento do menu de tempo e score */
 .menu-time h2:nth-child(2),
 .menu-score h2:nth-child(2) {
   margin-top: 10px;
+}
+
+/* Ajuste para elementos menores */
+@media (max-width: 768px) {
+  .menu-time h2,
+  .menu-score h2 {
+    font-size: 14px; /* Ajusta o tamanho da fonte */
+  }
 }
