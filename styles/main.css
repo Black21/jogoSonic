@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url("../images/green-hill.jpg");
+  background-repeat: repeat;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  height: 90px;
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  border-bottom: 5px solid #242ee7;
+}
+
+.panel {
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.square {
+  height: 150px;
+  width: 150px;
+  border: 1px solid #6d2914;
+  background-color: #d1d1d1;
+}
+
+.enemy {
+  background-image: url("../images/Eggman.webp");
+  background-size: cover;
+}
+
+.menu-lives {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.menu-lives img{
+  width: 60px;
+  margin-right: 10px;
+}
+
+
+.second {
+  margin-top: 10px;
+}
+
+.menu-time h2:nth-child(2),
+.menu-score h2:nth-child(2) {
+  margin-top: 10px;
+}
